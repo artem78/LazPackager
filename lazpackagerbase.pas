@@ -266,10 +266,11 @@ var
   Tool: TIDEExternalToolOptions;
 begin
   Tool := TIDEExternalToolOptions.Create;
-  Tool.Filename := GetBuildScriptInterpreter;
+//  Tool.Filename := GetBuildScriptInterpreter;      // Filename: deprecated
+  Tool.Executable := GetBuildScriptInterpreter;
   Tool.CmdLineParams := GetBuildScriptName;
   Tool.WorkingDirectory := GetProjectPathAbsolute;
-  Tool.ShowAllOutput := True;
+//  Tool.ShowAllOutput := True;                   // ShowAllOutput: "Error: ID no member"
   RunExternalTool(Tool);
   Tool.Free;
   Self.Free;
