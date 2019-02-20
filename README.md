@@ -51,3 +51,10 @@ Does it work yet?
 -----------------
 95%. Should work for most simple projects out of the box and with
 a few tweaks to the templates for all others too.
+
+NB by Thierry Andriamirado:
+---------------------------
+I concocted and delivered this maintenance version for practical reasons,
+so that LazPackager continues to work as Lazarus evolves, and why not, to make
+it evolve. Thanks go to Bernd Kreuss for this useful project.
+

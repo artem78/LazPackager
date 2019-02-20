@@ -87,7 +87,7 @@ uses
   sysutils,
   Forms,
   LCLProc,
-  FileUtil,
+  FileUtil, LazStringUtils, LazFileUtils,
   LazIDEIntf,
   ProjectResourcesIntf,
   MacroIntf,

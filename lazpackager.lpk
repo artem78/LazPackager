@@ -25,7 +25,7 @@ A copy of the GNU General Public License is available on the World Wide
 Web at &lt;http://www.gnu.org/copyleft/gpl.html>. You can also obtain it by
 writing to the Free Software Foundation, Inc., 59 Temple Place - Suite
 330, Boston, MA 02111-1307, USA."/>
-    <Version Major="1" Release="1" Build="1"/>
+    <Version Major="1" Release="1" Build="3"/>
     <Files Count="6">
       <Item1>
         <Filename Value="frmlazpackageroptionsdeb.pas"/>
