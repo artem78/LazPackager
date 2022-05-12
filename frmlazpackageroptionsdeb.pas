@@ -104,7 +104,7 @@ var
 
 implementation
 uses
-  frmLazPackagerPreview;
+  frmLazPackagerPreview, SynEditTypes;
 
 {$R *.lfm}
 
