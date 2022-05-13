@@ -57,8 +57,8 @@ const
     + TAB + 'lazbuild ?PROJECT?' + LF
     + LF
     + 'override_dh_auto_install:' + LF
-    + TAB + 'install -d -m 755 $(ROOT)/usr/bin' + LF
-    + TAB + 'install -s -m 755 ?EXECUTABLE? $(ROOT)/usr/bin' + LF
+    + TAB + 'install -d -m 755 "$(ROOT)/usr/bin"' + LF
+    + TAB + 'install -s -m 755 ?EXECUTABLE? "$(ROOT)/usr/bin"' + LF
     + LF
     + '%:' + LF
     + TAB + 'dh $@' + LF
