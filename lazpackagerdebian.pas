@@ -215,7 +215,8 @@ begin
 
   if Sign then begin
     S += 'cd ..' + LF;
-    S += 'xterm -e "debsign *.changes"' + LF;
+    //S += 'xterm -e "debsign *.changes"' + LF;
+    S += 'debsign *.changes' + LF;
   end;
 
   if Upload then begin
