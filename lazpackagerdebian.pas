@@ -149,7 +149,7 @@ end;
 procedure TPackagerDebian.Load;
 begin
   inherited Load;
-  Series := LoadValue(CONFNAME_DEB, 'series', 'precise');
+  Series := LoadValue(CONFNAME_DEB, 'series', 'focal');
   PPA := LoadValue(CONFNAME_DEB, 'ppa', 'ppa:johndoe/use-your-own');
 
   Control := LoadValue(CONFNAME_DEB, 'tpl_control', DEFAULT_CONTROL);
