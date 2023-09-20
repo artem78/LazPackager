@@ -271,6 +271,7 @@ begin
   Tool.CmdLineParams := GetBuildScriptName;
   Tool.WorkingDirectory := GetProjectPathAbsolute;
 //  Tool.ShowAllOutput := True;                   // ShowAllOutput: "Error: ID no member"
+  Tool.Quiet := False;
   RunExternalTool(Tool);
   Tool.Free;
   Self.Free;
