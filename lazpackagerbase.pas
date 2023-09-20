@@ -86,7 +86,7 @@ uses
   Classes,
   sysutils,
   Forms,
-  LCLProc,
+  LCLProc, Dialogs,
   FileUtil, LazStringUtils, LazFileUtils,
   LazIDEIntf,
   ProjectResourcesIntf,
@@ -268,11 +268,14 @@ begin
   Tool := TIDEExternalToolOptions.Create;
 //  Tool.Filename := GetBuildScriptInterpreter;      // Filename: deprecated
   Tool.Executable := GetBuildScriptInterpreter;
-  Tool.CmdLineParams := GetBuildScriptName;
+  Tool.CmdLineParams := GetBuildScriptName {+ ' && read -p "[ Press any key to exit... ]"'};
   Tool.WorkingDirectory := GetProjectPathAbsolute;
 //  Tool.ShowAllOutput := True;                   // ShowAllOutput: "Error: ID no member"
   Tool.Quiet := False;
-  RunExternalTool(Tool);
+  Tool.ShowConsole := True;
+  Tool.HideWindow := False;
+  if not RunExternalTool(Tool) then
+    ShowMessage('Failed!');
   Tool.Free;
   Self.Free;
 end;
